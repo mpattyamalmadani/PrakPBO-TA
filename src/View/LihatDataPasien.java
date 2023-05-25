@@ -1,8 +1,9 @@
-package Pasien;
+package View;
 
+import Controller.Pasien;
 import java.awt.Graphics;
 import java.awt.Image;
-import login.LoginAdmin;
+import Dao.LoginAdmin;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

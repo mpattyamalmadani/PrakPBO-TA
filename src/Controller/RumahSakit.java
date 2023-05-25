@@ -1,4 +1,4 @@
-package RumahSakit;
+package Controller;
 
 public class RumahSakit {
 

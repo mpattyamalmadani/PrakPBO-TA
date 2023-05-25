@@ -1,4 +1,4 @@
-package login;
+package Dao;
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -12,6 +12,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+import View.MenuUtama;
 
 public class LoginAdmin extends javax.swing.JFrame {
     
@@ -126,6 +127,7 @@ public class LoginAdmin extends javax.swing.JFrame {
 
         String un =user.getText();
         String p =pass.getText();
+        boolean islogin = false;
        
         
         try{ Class.forName("com.mysql.jdbc.Driver");
@@ -140,10 +142,15 @@ public class LoginAdmin extends javax.swing.JFrame {
                
                if(un.equals(username) && p.equals(password)){
                new MenuUtama().setVisible(true);
+               islogin = true;
+               break;
                }
-               else{
+               //else{
+               ///JOptionPane.showMessageDialog(this, "Username dan Password Salah");
+               //}
+           }
+           if(islogin==false){
                JOptionPane.showMessageDialog(this, "Username dan Password Salah");
-               }
            }
         }
 catch(Exception e){

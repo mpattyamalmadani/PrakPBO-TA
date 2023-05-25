@@ -1,9 +1,9 @@
-package Dokter.Crud;
+package Model;
 
-import Dokter.Dokter;
+import Controller.Dokter;
 import java.awt.Graphics;
 import java.awt.Image;
-import login.LoginAdmin;
+import Dao.LoginAdmin;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

@@ -1,7 +1,8 @@
-package login;
+package View;
 
-import Pasien.Pasien;
-import Dokter.Dokter;
+import Dao.LoginAdmin;
+import Controller.Pasien;
+import Controller.Dokter;
 import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
